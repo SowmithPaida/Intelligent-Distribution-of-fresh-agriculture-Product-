@@ -1,0 +1,133 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font and Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7fff7;
+  min-height: 100vh;
+}
+
+/* Navbar */
+header {
+  background: linear-gradient(to right, #2e7d32, #66bb6a);
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.navbar h1 {
+  color: white;
+  font-size: 24px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.navbar button:hover {
+  transform: scale(1.1);
+  color: #dcedc8;
+}
+
+/* Main Content */
+main {
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Cards */
+.card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #2e7d32;
+}
+
+h3 {
+  color: #388e3c;
+}
+
+/* Lists */
+.product-list, .warehouse-list, .order-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.product-item, .warehouse-item, .order-item {
+  background: #e8f5e9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.product-item:hover, .warehouse-item:hover, .order-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Inputs */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Buttons */
+button.main-btn {
+  background-color: #43a047;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button.main-btn:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}
+
+/* Hidden class */
+.hidden {
+  display: none;
+}

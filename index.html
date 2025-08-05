@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agriculture Distribution App</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1>🌱 Smart Agriculture</h1>
+      <ul>
+        <li><button onclick="showSection('products')">🛍️ Products</button></li>
+        <li><button onclick="showSection('cart')">🛒 Cart</button></li>
+        <li><button onclick="showSection('warehouse')">🏢 Warehouses</button></li>
+        <li><button onclick="showSection('orders')">📦 Orders</button></li>
+        <li><button onclick="logout()">🚪 Logout</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="mainContent"></main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
